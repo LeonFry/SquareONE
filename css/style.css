@@ -1,0 +1,79 @@
+h1, h2, h3, h4 {
+	font-family: 'Dosis', helvetica, arial, sans-serif;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 28px;
+	color: #333333;
+}
+p {
+	font-family: 'Dosis',helvetica, arial, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+}
+a {
+	font-family: 'Dosis',helvetica, arial, sans-serif;
+}
+.body-padding {
+	padding-left: 2rem;
+	background-color: #FFFEF3;
+}
+.side-navigation {
+  background-color: #41DBF7;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 50px;
+  position: fixed;
+  overflow-x: hidden;
+  overfrlow-y: scroll;
+  top: 0;
+  width: 15rem;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 0 2px #888888;
+  -webkit-box-shadow: 0 0 2px #888888;
+  -moz-box-shadow: 0 0 2px #888888;
+
+}
+.side-navigation a {
+	text-decoration: none;
+	color: #7C7C7C;
+}
+.side-navigation ul {
+	list-style: none;
+}
+.side-nav-button {
+	background-color: #FFFFFF;
+	border-radius: 8px 0 0 8px;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	text-align: center;	
+}
+.side-nav-button:hover {
+	background-color: #FFFEF3;
+}
+.project-card {
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	border: solid #4AEDAC 1px;
+	margin: 1rem;
+	display: inline-block;
+	width: 18rem;
+	height: 25rem;
+	box-shadow: 0 0 2px #888;
+	-webkit-box-shadow: 0 0 2px #888;
+	-moz-box-shadow: 0 0 2px #888;
+
+}
+.height-test {
+	background-color: blue;
+	height: 2000px;
+	width: 20px;
+}
