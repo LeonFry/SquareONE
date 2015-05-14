@@ -19,9 +19,19 @@ p {
 a {
 	font-family: 'Dosis',helvetica, arial, sans-serif;
 }
+.bbg-color {
+	background-color: #FFFEF3;
+}
 .body-padding {
 	padding-left: 2rem;
-	background-color: #FFFEF3;
+}
+.s1-logo {
+	background-image: url("../images/S1-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 10rem;
+	width: 15rem;
+	margin: 0 auto;
 }
 .side-navigation {
   background-color: #41DBF7;
@@ -48,16 +58,39 @@ a {
 }
 .side-nav-button {
 	background-color: #FFFFFF;
-	border-radius: 8px 0 0 8px;
+	border-radius: 8px;
 	margin-left: 1rem;
+	margin-right: 0.5rem;
 	margin-top: 1rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	padding-left: 0.5rem;
-	text-align: center;	
+	text-align: center;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
 }
-.side-nav-button:hover {
+.side-nav-inactive:hover {
+	background-color: #B7B7B7;
+	border-radius: 8px 0 0 8px;
+	margin-right: 0;
+}
+.side-nav-inactive:hover a {
+	color: #FFFFFF;
+}
+.side-nav-active {
 	background-color: #FFFEF3;
+	border-radius: 8px 0 0 8px;
+	margin-right: 0;
+}
+.contribute-cover {
+	width: 2rem;
+	height: 3rem;
+	background-color: teal;
+	position: absolute;
+	top: 11rem;
+	left: 14rem;
 }
 .project-card {
 	background-color: #FFFFFF;
