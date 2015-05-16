@@ -18,6 +18,15 @@ p {
 }
 a {
 	font-family: 'Dosis',helvetica, arial, sans-serif;
+	color: #4AEDAC;
+	text-decoration: underline;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+a:hover {
+	color: #FFFFFF;
 }
 .bbg-color {
 	background-color: #FFFEF3;
@@ -29,9 +38,62 @@ a {
 	background-image: url("../images/S1-logo.png");
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 	height: 10rem;
 	width: 15rem;
-	margin: 0 auto;
+	margin: 0.5rem auto;
+}
+.s1-button {
+	background-color: #4AEDAC;
+	border-radius: 8px;
+	color: #FFFFFF;
+	display: inline-block;
+	font-family: 'Dosis',helvetica, arial, sans-serif;
+	text-align: center;
+	margin: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.s1-button:hover {
+	background-color: #7C7C7C;
+
+}
+.filter-button{
+	display: inline-block;
+	width: 14rem;
+
+}
+.s1-search-input:focus {
+	border: solid 2px #7C7C7C;
+	outline: 0;
+}
+.s1-search-input {
+	border-radius: 8px 0 0 8px;
+	border: solid 2px #FFFFFF;
+	background-color: #FFFFFF;
+	color: black;
+	display: inline;
+	margin-right: -5px;
+}
+.s1-search-input:hover {
+	background-color: #FFFFFF;
+}
+.s1-search-button {
+	background-color: #7C7C7C;
+	border: solid 2px #7C7C7C;
+	border-radius: 0 8px 8px 0;
+	display: inline;
+	margin-left: 0;
+}
+.s1-search-button:focus {
+	outline: 0;
 }
 .side-navigation {
   background-color: #41DBF7;
@@ -39,7 +101,7 @@ a {
   left: 0;
   padding-bottom: 50px;
   position: fixed;
-  overflow-x: hidden;
+  overflow-x: visible;
   overfrlow-y: scroll;
   top: 0;
   width: 15rem;
@@ -58,14 +120,15 @@ a {
 }
 .side-nav-button {
 	background-color: #FFFFFF;
-	border-radius: 8px;
+	border-radius: 8px 0 0 8px;
+	float: right;
 	margin-left: 1rem;
-	margin-right: 0.5rem;
 	margin-top: 1rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	padding-left: 0.5rem;
 	text-align: center;
+	width: 13rem;
 	-webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
@@ -73,16 +136,67 @@ a {
 }
 .side-nav-inactive:hover {
 	background-color: #B7B7B7;
-	border-radius: 8px 0 0 8px;
-	margin-right: 0;
-}
-.side-nav-inactive:hover a {
 	color: #FFFFFF;
 }
 .side-nav-active {
 	background-color: #FFFEF3;
 	border-radius: 8px 0 0 8px;
-	margin-right: 0;
+	margin-right: -1rem;
+	width: 14rem;
+}
+.pic-head {
+	height: 12.5rem;
+	background-image: url("../images/header-bg.jpg");
+	background-size: cover;
+ 	background-position-x: 50%;
+ 	background-position-y: 35%;
+	background-repeat: no-repeat;
+	background-color: teal;
+	margin-left: 15rem;
+	padding-left: 3rem;
+}
+.pic-head h1, p {
+	color: #FFFFFF;
+	margin-bottom: 0;
+	padding-top: 2rem;
+}
+.pic-head p {
+	padding-top: 0;
+}
+.filter {
+	background-color: #B7B7B7;
+	border-radius: 0 0 8px 8px;
+	position: relative;
+}
+.filter-container{
+	/*display: none;*/
+	visibility: hidden;
+	box-shadow: 0 0 2px #888;
+	position: absolute;
+	top: -10rem;
+	opacity: .99;
+	-webkit-box-shadow: 0 0 2px #888;
+	-moz-box-shadow: 0 0 2px #888;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.filter-container.is-active{
+	visibility: visible;
+	top: 5rem;
+	display: block;
+	background-color: #FFFFFF;
+	border-radius: 0 0 8px 8px;
+}
+.filter-container ul {
+	list-style: none;
+}
+.filter-container li {
+	display: inline-block;
+}
+.filter-trigger.is-active {
+	background-color: #FFFFFF;
 }
 .contribute-cover {
 	width: 2rem;
@@ -98,15 +212,14 @@ a {
 	border: solid #4AEDAC 1px;
 	margin: 1rem;
 	display: inline-block;
-	width: 18rem;
 	height: 25rem;
 	box-shadow: 0 0 2px #888;
 	-webkit-box-shadow: 0 0 2px #888;
 	-moz-box-shadow: 0 0 2px #888;
 
 }
-.height-test {
-	background-color: blue;
-	height: 2000px;
-	width: 20px;
+.s1-footer {
+	border-radius: 8px 8px 0 0;
+	background-color: #B7B7B7;
+	height: 5rem;
 }

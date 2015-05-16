@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -35,31 +37,61 @@
   <aside class="side-navigation">
     <div class="s1-logo"></div>
     <ul>
-      <li class="side-nav-button side-nav-active"><a href="#">Contribute</a></li>
-      <li class="side-nav-button side-nav-inactive"><a href="#">Start Something</a></li>
-      <li class="side-nav-button side-nav-inactive"><a href="#">About SquareONE</a></li>
-      <li class="side-nav-button side-nav-inactive"><a href="#">Sign In</a></li>
+      <li ><a class="side-nav-button side-nav-active" href="#">Contribute</a></li>
+      <li ><a class="side-nav-button side-nav-inactive" href="#">Start Something</a></li>
+      <li ><a class="side-nav-button side-nav-inactive" href="#">About SquareONE</a></li>
+      <li ><a class="side-nav-button side-nav-inactive" href="#">Sign In</a></li>
     </ul>
    </aside>
+  <header class="pic-head">
+    <h1>Start, Build, Support.</h1>
+    <p>SquareONE can launch your project and bring life to a community. <a href="#">Learn More.</a></p>
+  </header>
   <div class="container body-padding">
+    <div class="filter">
+      <a class="s1-button" href="#">View Non-Profits Only</a>
+      <a class="s1-button filter-trigger" href="#">Filter: All</a>
+      <input class="s1-button s1-search-input">
+      <input class="s1-button s1-search-button" type="submit" Value="Search">
+      <div class="filter-container">
+        <ul>
+          <li><a class="s1-button filter-button" href="#">Art</a></li>
+          <li><a class="s1-button filter-button" href="#">Art</a></li>
+          <li><a class="s1-button filter-button" href="#">Art</a></li>
+          <li><a class="s1-button filter-button" href="#">Art</a></li>
+          <li><a class="s1-button filter-button" href="#">Art</a></li>
+          <li><a class="s1-button filter-button" href="#">Art</a></li>
+          <li><a class="s1-button filter-button" href="#">Art</a></li>
+        </ul>
+      </div>
+    </div>
+    
     <div class="row">
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="height-test"></div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+    </div>
+    <div class="row">
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+    </div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+        <div class="project-card three columns"></div>
+        <a class="load-button s1-button" href="#">Load More.</a>
+    </div>
+    <div class="row">
+      <footer class="s1-footer"></footer>
     </div>
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="js/filter.js"></script>
 </body>
 </html>
