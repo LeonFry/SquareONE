@@ -36,7 +36,6 @@ a:hover {
 }*/
 .s1-container {
   position: relative;
-  width: 80%;
   margin-left: 16rem;
 }
 .s1-logo {
@@ -77,6 +76,9 @@ a:hover {
 }
 .load-button {
 	display: block;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
 }
 .search-box {
 	display: inline-block;
@@ -218,6 +220,9 @@ a:hover {
 	left: 14rem;
 }
 .project-card {
+	box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
 	background-color: #FFFFFF;
 	border-radius: 8px;
 	border: solid #4AEDAC 1px;
@@ -230,12 +235,6 @@ a:hover {
 	-webkit-box-shadow: 0 0 2px #888;
 	-moz-box-shadow: 0 0 2px #888;
 
-}
-.dyno-width {
-	background-color: lightblue;
-}
-.dyna-width li {
-	float: left;
 }
 .s1-footer {
 	border-radius: 8px 8px 0 0;

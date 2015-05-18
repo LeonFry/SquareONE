@@ -17,9 +17,9 @@ $(document).ready(function(){
 var masterwide = $(".dyno-width").width()+"px";
 }*/
 
-$(document).ready(function calculateLIsInRow() {
+function calculateLIsInRow() {
     var lisInRow = 0;
-    $('ul li').each(function() {
+    $('ul.dyna-width li').each(function() {
         if($(this).prev().length > 0) {
             if($(this).position().top != $(this).prev().position().top) return false;
             lisInRow++;
@@ -29,14 +29,15 @@ $(document).ready(function calculateLIsInRow() {
         }
     });
 var x = lisInRow;
-var y = 2;
+var y = 18;
+var pxreduce = x +'px'
 var masterwide = x * y + 'rem';
 $(".copy-cat").width(masterwide)
-})
+};
 
 calculateLIsInRow();
 
 $(window).resize(calculateLIsInRow);
-
+$(document).ready(calculateLIsInRow);
 
 
