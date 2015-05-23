@@ -42,6 +42,8 @@ $(document).ready(calculateLIsInRow);
 
 $(document).ready(function() {
   $('ul.sorter a').click(function() {
+  	$('.filter-trigger').removeClass('active');
+  	$('.filter-container').removeClass('is-active');
     $(this).css('outline', 'none');
     $('ul#filter .current').removeClass('current');
     $(this).parent().addClass('current');
