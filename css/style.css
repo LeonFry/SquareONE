@@ -160,8 +160,7 @@ a:hover {
 	height: 12.5rem;
 	background-image: url("../images/header-bg.jpg");
 	background-size: cover;
- 	background-position-x: 50%;
- 	background-position-y: 35%;
+ 	background-position: 50% 35%;
 	background-repeat: no-repeat;
 	background-color: teal;
 	margin-left: 15rem;
