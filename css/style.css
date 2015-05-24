@@ -274,6 +274,7 @@ a:hover {
 	margin-left: 1rem;
 	margin-top: 1rem;
 	padding: 1rem;
+	text-align: center;
 }
 .page-body h3 {
 	margin-top: 0;
@@ -363,4 +364,44 @@ body {
 }
 .side-push {
 	height: 9rem;
+}
+.line-breaker {
+	display: inline-block;
+	height: 1px;
+	background-color: #B7B7B7;
+	width: 20rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.grey-or {
+	color: #B7B7B7;
+	display: inline-block;
+}
+.s1-form-input {
+	border: solid 1px #B7B7B7;
+	border-radius: 8px;
+	color: #B7B7B7;
+	width: 50rem;
+}
+.s1-form-submit {
+	width: 50rem;
+}
+.form-box p {
+	margin-bottom: -1rem;
+	margin-top: 1rem;
+}
+.form-box {
+	text-align: left;
+	margin: 0 auto;
+	width: 50rem;
+}
+.s1-check {
+	display: inline-block;
+	padding-right: 0.5rem;
+}
+.social-signin {
+	width: 50rem;
+	margin: 0 auto;
 }
