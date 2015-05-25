@@ -278,7 +278,7 @@ fieldset {
   padding: 0;
   border-width: 0; }
 input[type="checkbox"],
-input[type="radio"] {
+input[type="radio"] {\
   display: inline; }
 label > .label-body {
   display: inline-block;

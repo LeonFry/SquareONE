@@ -80,14 +80,14 @@ a:hover {
 }
 .s1-search-input {
 	border-radius: 8px 0 0 8px;
-	border: solid 2px #FFFFFF;
+	border: solid 1px #FFFFFF;
 	background-color: #FFFFFF;
 	color: black;
 	display: inline;
 	margin-right: -5px;
 }
 .s1-search-input:focus {
-	border: solid 2px #7C7C7C;
+	border: solid 1px #7C7C7C;
 	outline: 0;
 }
 .s1-search-input:hover {
@@ -95,7 +95,7 @@ a:hover {
 }
 .s1-search-button {
 	background-color: #7C7C7C;
-	border: solid 2px #7C7C7C;
+	border: solid 1px #7C7C7C;
 	border-radius: 0 8px 8px 0;
 	display: inline;
 	margin-left: 0;
@@ -384,9 +384,18 @@ body {
 	border-radius: 8px;
 	color: #B7B7B7;
 	width: 50rem;
+	margin-left: 0;
+	margin-right: 0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 .s1-form-submit {
 	width: 50rem;
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 .form-box p {
 	margin-bottom: -1rem;
@@ -403,5 +412,110 @@ body {
 }
 .social-signin {
 	width: 50rem;
+	margin: 0 auto;
+}
+.form-switch {
+	position: relative; 
+	width: 50rem;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	-webkit-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select: none;
+}
+.form-switch-check {
+	display: none !important;
+}
+.form-switch-label {
+	display: block; 
+	overflow: hidden; 
+	cursor: pointer;
+	margin: 0;
+}
+.form-switch-label:hover {
+	background-color: #4AEDAC;
+}
+.form-switch-inner {
+	display: block;
+	width: 100%; 
+	margin-left: 0;
+	-moz-transition: margin 0.3s ease-in 0s; 
+	-webkit-transition: margin 0.3s ease-in 0s;
+	-o-transition: margin 0.3s ease-in 0s; 
+	transition: margin 0.3s ease-in 0s;
+}
+.form-switch-selector {
+	display: block; 
+	width: 50%; 
+	height: 34px;
+	border-radius: 8px;
+	border: solid 2px gray;
+	position: absolute; 
+	top: 0; 
+	bottom: 0; 
+	left: 50%;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	-moz-transition: all 0.3s ease-in 0s; 
+	-webkit-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s; 
+	transition: all 0.3s ease-in 0s;
+}
+.form-switch-inner:before {
+	content: "For Profit";
+	padding-left: 15%;
+	color: #fff;
+	float: left;
+}
+.form-switch-inner:after {
+	content: "Non-Profit";
+	color: #fff;
+	float: right;
+	padding-right: 15%
+}
+.form-switch-check:checked + .form-switch-label .form-switch-selector {
+	left:0;
+}
+.form-switch-check:checked ~.conditional {
+	visibility: hidden;
+}
+.conditional {
+	color: #B7B7B7;
+	display: block;
+}
+.form-cat:hover {
+	background-color: #4AEDAC;
+	cursor: pointer;
+}
+#cat-1:checked + .form-cat {
+	background-color: #B7B7B7;
+}
+#cat-2:checked + .form-cat {
+	background-color: #B7B7B7;
+}
+#cat-3:checked + .form-cat {
+	background-color: #B7B7B7;
+}
+#cat-4:checked + .form-cat {
+	background-color: #B7B7B7;
+}
+#cat-5:checked + .form-cat {
+	background-color: #B7B7B7;
+}
+#cat-6:checked + .form-cat {
+	background-color: #B7B7B7;
+}
+.decription-field {
+	height: 5rem;
+}
+.image-drop {
+	display: block;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+.img-icon {
+	width: 4rem;
+	display: block;
 	margin: 0 auto;
 }
