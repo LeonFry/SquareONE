@@ -286,6 +286,10 @@ a:hover {
 	margin-bottom: 2rem;
 	padding-top: 0;
 }
+.project-page {
+	padding: 0;
+	overflow: hidden;
+}
 .s1-footer {
 	border-radius: 8px 8px 0 0;
 	background-color: #B7B7B7;
@@ -513,8 +517,57 @@ body {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
 }
+.profile-pic {
+	padding: 2rem;
+	display: inline-block;
+	width: 20rem;
+}
 .img-icon {
 	width: 4rem;
 	display: block;
 	margin: 0 auto;
 }
+.s1-form-filled {
+	color: #000;
+}
+.basic-info {
+	display: inline-block;
+	width: 27rem;
+	margin-left: 2rem;
+}
+.basic-info-fields {
+	width: 27rem;
+}
+.project-image {
+	background-image: url("../images/Turkish.town.cesme.jpg");
+	height: 30rem;
+	width: 60%;
+	margin-left: 1rem;
+	background-size: cover;
+	background-position: 30%;
+	border-radius: 0 8px 0 0;
+	float: right;
+}
+.project-info {
+	text-align: left;
+	padding: 1rem;
+}
+.project-info h6 {
+	margin-bottom: 0;
+}
+.fund-bar {
+	border: solid 2px #B7B7B7;
+	width: 38%;
+	border-radius: 8px;
+}
+.fund-meter {
+	background-color: #4AEDAC;
+	border-radius: 6px;
+	color: #fff;
+	width: 8%;
+	text-align: center;
+
+}
+
+
+
